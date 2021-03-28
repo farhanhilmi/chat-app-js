@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Chat App | Javascript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main>
+      <section class="container">
+        <div class="list-chat">
+          <div class="bar-list">
+            <div class="img-profile">
+              <img id="myImage" src="https://www.satupedia.com/wp-content/uploads/2021/01/Kendall-Jenner.jpg" alt="">
+              <h4 id="title-app"></h4>
+            </div>
+            <div class="settings">
+              <span id="newChat"><i class="fas fa-plus fa-xs"></i></span>
+              <span id="logoutBtn"><i class="fas fa-cog fa-xs"></i></span>
+            </div>
+          </div>
+
+          <div class="search">
+            <span><i class="fas fa-search fa-xs"></i></span>
+            <input type="text" placeholder="Search">
+          </div>
+
+          <section class="chats-content" id="chats-content">
+            <hr>
+            <div class="chats" id="myBox" onclick="getChat('myBox')">
+              <img src="https://www.satupedia.com/wp-content/uploads/2021/01/Kendall-Jenner.jpg" alt="">
+              <div class="chats-msg">
+                <h5>Kendell</h5>
+                <p>Hey, buddy, what's up? How r u?</p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+        <div class="chat-msg" id="chatPanel">
+          <div class="bar-chat">
+            <div class="leftSide">
+              <img src="https://www.satupedia.com/wp-content/uploads/2021/01/Kendall-Jenner.jpg" alt="">
+              <div>
+                <h5>Kendell</h5>
+                <p>Online</p>
+              </div>
+            </div>
+            <div class="rightSide">
+              <span><i class="fas fa-phone-alt"></i></span>
+              <span><i class="fas fa-video"></i></span>
+              <span><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </div>
+
+          <div class="body">
+            <div class="msg-body">
+              <div class="messages" id="messages">
+                <div class="receiver">
+                  <img src="https://www.satupedia.com/wp-content/uploads/2021/01/Kendall-Jenner.jpg" alt="">
+                  <p>Hey, buddy, what's up? </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="input-container">
+              <span><i class="fas fa-smile-wink"></i></span>
+              <span style="margin-left: 10px;"><i class="fas fa-paperclip"></i></span>
+              <input type="text" id="chatMsg" placeholder="Type a message here...">
+              <span><i class="fas fa-microphone"></i></span>
+              <div class="send-msg">
+                <span><i class="fas fa-paper-plane fa-lg"></i></span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="right-panel" id="right-panel">
+          <input type="text" id="newChatValue" placeholder="enter name">
+          <button id="btnNewChat">Start a new chat</button>
+        </div>
+      </section>
+    </main>
+
+
+    <script defer src="./scripts.js"></script>
+  </body>
+
+</html>
